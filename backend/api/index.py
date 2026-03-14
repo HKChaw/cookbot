@@ -1,10 +1,7 @@
-from fastapi import APIRouter
-from backend.main import app
+from fastapi import FastAPI
 
-router = APIRouter()
+app = FastAPI()
 
-@router.get("/")
+@app.get("/")
 def home():
     return {"message": "CookBot API working"}
-
-app.include_router(router)
