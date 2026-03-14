@@ -1,6 +1,2 @@
-[project]
-name = "cookassist"
-version = "0.1.0"
-
 [project.scripts]
 app = "backend.main:app"
